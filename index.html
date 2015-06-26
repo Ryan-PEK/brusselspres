@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>RNA-NETSCI15</title>
+
+		<meta name="description" content="NETSCI TALK">
+		<meta name="author" content="Carlos A. Lugo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="/images/Union2.png">
+					<h2 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Structural features of RNA phenotype networks</h2>
+					<h3 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">Applications to biological evolution</h3>
+					<br>
+					<h4 style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">CRM-Barcelona</h4>
+					<br>
+					<p style="color: rgba(255,255,255,0.75); text-shadow: 0 0 100px rgba(0,255,255,0.95);">
+						Carlos A Lugo-The Sainsbury Laboratory<br>
+						@kupkasmale<br>http://calugo.github.io
+					</p>
+				</section>
+
+				<section>
+				<section>
+					<h3 align="left">Biological Evolution</h3>
+					<style>
+					.newspaper {
+    			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    			-moz-column-count: 2; /* Firefox */
+    			column-count: 2;
+					}
+					</style>
+					<div class="newspaper">
+				 		<p align="left">
+							<img  class="stretch" width=100% style="border:none; box-shadow:none;" data-src="images/Evolution.jpg" ></img>
+						</p>
+						<br>
+						<h4 align="left">Evolutionary Theory:</h4>
+						<p align="left" class="fragment highlight-blue">Robustness and Evolvability</p>
+						<p align="left" class="fragment highlight-blue">Multi-scale</p>
+						<p align="left" class="fragment highlight-blue">Novel uses of known solutions</p>
+						<p align="left" class="fragment highlight-blue">Accounts for the multiple origin of innovations</p>
+						<p align="left" class="fragment highlight-blue">Provides insights about the role of changes in the environment</p>
+						<p align="left"><i>A. Wagner, Trends in Genetics (2011)</i></p>
+					</div>
+					<p align="left"><small>Image title:"Evolución" by Roberto Gomes  <i>http://isignrob.deviantart.com/ </i></small></p>
+					 <aside class="notes">
+        	Oh hey, these are some notes.
+					They'll be hidden in your presentation, but you can see them if you open the speaker notes window
+					(hit 's' on your keyboard).
+    			</aside>
+				</section>
+
+				<section>
+					<h3 align="left">Phenotypic innovations</h3>
+					<br>
+					<p align="left">Are the result of microscopic changes in:</p>
+					<ul>
+					<br>
+					<li>Macromolecules (Nucleic Acids, Proteins)</li>
+					<li>Genetic circuits</li>
+					<li>Metabolic Networks</li>
+					</ul>
+					<br>
+					<br>
+					<p align="left">Systematically can be studied by the theory of:
+					<strong>Genotype-Phenotype Maps</strong></p>
+					<br>
+					<br>
+
+					<aside class="notes">
+						Every change occurs at DNA level, the G-P framework is a very clever approach
+						Mention case by case is bad
+						Computational
+					</aside>
+				</section>
+
+
+				<section>
+					<h3 align="left">Genotype-Phenotype Maps</h3>
+					<br>
+					<style>
+					.newspaper {
+					-webkit-column-count: 2; /* Chrome, Safari, Opera */
+					-moz-column-count: 2; /* Firefox */
+					column-count: 2;
+					}
+					</style>
+					<div class="newspaper">
+
+						<h4 align="left">Features:</h4>
+						<p align="left">Genotype spaces are composed by large <i>neutral sets</i> (Connected
+							Networks of elements with the same pheotype)</p>
+						<p align="left">Neighborhoods of genotypes exhibit great phenotypic diversity.</p>
+						<br>
+						<br>
+
+						<h4 align="left">Genotypes:</h4>
+						<p align="left">Sequences:
+						<br>$g_i=\{\sigma_{i,j}\}_{j=1}^{L}$, $\sigma_{i,j}\in[C,G,A,U]$
+						<br>$\Omega_L=\{g_i\}_{i=1}^{4^L}$
+						<br>
+						Metabolic Networks and GRN.
+						</p>
+						<br>
+						<h4 align="left">Phenotypes:</h4>
+							<p align="left">Folding and Assembly structures</p>
+
+				</div>
+					<aside class="notes">
+					Mention sizes 10^80, mingesize l=800
+        	Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+    			</aside>
+
+				</section>
+
+			 <section> <!-- data-background="images/Protein_structure.png" data-background-size="90%"-->
+				<h3 align="left">Phenotypes:</h3>
+
+				<style>
+				.newspaper {
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				}
+				</style>
+
+				<div class="newspaper">
+				<img align="left" class="stretch" width="110%" style="border:none; box-shadow:none; " data-src="images/Protein_structure.png" ></img>
+				<br>
+				<p  align="left"><small>Protein Structure by Holger87. CC BY-SA 3.0 via Wikimedia Commons</small></p>
+				<br>
+				<p align="right"><small>
+					Genotype:GGGCUAUUAGCUCAGUUGGUUAGAGCGCACCCCU<br>GAUAAGGGUGAGGUCGCUGAUUCGAAUUCAGCAUAGCCCA</small></p>
+				<p><small>RNA Phenotype proxy (Has a distance):</small></p>
+				<img  width="50%" style="border:none; box-shadow:none;" data-src="images/test_sequenc_ss.png" ></img>
+				<p><small>
+					(((((((..((((.........)))).(((((.......))))).....(((((.......)))))))))))).</small></p>
+			</div>
+				<aside class="notes">
+        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+    </aside>
+			</section>
+
+			<section>
+				<!-- h4 align="left">Example: The genetic code (L=3): 64 sequences, 21 Aminoacids.</h4 -->
+
+
+				<style>
+				.newspaper {
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				}
+				</style>
+				<div class="newspaper">
+				<p align="left"><small><strong>Example: The genetic code (L=3): 64 sequences, 21 Aminoacids.<br></strong>
+				Network of codons at $d_{ij}=1.0$ </small></p>
+				<img width="92%" style="border:none; box-shadow:none;" data-src="images/NETDIAG/Alltest.png" ></img>
+			</p>
+				<p><small><br>Neutral sets networks only </small>
+				<img width="92%" style="border:none; box-shadow:none;" data-src="images/NETDIAG/nnetstest.png" ></img>
+			</p>
+
+			</div>
+			</section>
+
+			<section>
+				<!-- h4 align="left">Phenotype Neighbourhoods (Pro and Arg )</h4 -->
+				<!--p align="left"><small><strong>Phenotype Neighbourhoods (Pro and Arg )</strong></small></p-->
+
+				<style>
+				.newspaper {
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				}
+				</style>
+				<div class="newspaper">
+				<p align="left"><small><strong>Phenotype Neighourhoods:<br></strong>
+				Proline </small></p>
+				<img width="92%" style="border:none; box-shadow:none;" data-src="images/NETDIAG/nn3test.png" ></img>
+				<p><small><br><br>Arginine</small>
+				<img width="92%" style="border:none; box-shadow:none;" data-src="images/NETDIAG/nn5test.png" ></img>
+			</div>
+			</section>
+
+		</section>
+
+
+		<section>
+			<section>
+				<h3 align="left">RNA NETWORKS (L=12)</h3>
+
+				<p align="left"><i>J. Aguirre et al, PLOS ONE (2011)</i></p>
+				<br>
+				<style>
+				.newspaper {
+				-webkit-column-count: 2; /* Chrome, Safari, Opera */
+				-moz-column-count: 2; /* Firefox */
+				column-count: 2;
+				}
+				</style>
+				<div class="newspaper">
+					<p align="left">$\left| \Omega _L \right|=4^L=16777216$</p>
+					<p align="left">$i:$ Phenotype, $n_i:$Phenotype Size</p>
+					<p align="left">Mean degree: $k_i \simeq \ln ( n_{i} )$</p>
+					<p align="left">Clustering:<br>$C_{k_i}\sim {k_i}^{-1}$<br>
+					$C_{n_i}\sim ln (n_i)^{-1}$</p>
+					<p align="left">Number of phenotypes $\simeq$ 50</p>
+					<p align="left">Number of connected sets $\simeq$ 500 </p>
+					<p align="left">Degree Distributions $p_i(k)$ Unimodal</p>
+					<p align="left">Assortativity: $k_{n,n}$ increasing (r>0)</p>
+				</div>
+				<br><br>
+			</section>
+
+			<section>
+				<h3 align="left">Degree distributions</h3>
+				<br>
+				<img width="100%" style="border:none; box-shadow:none;" data-src="images/journal.pone1b.png" ></img>
+		  </section>
+
+			<section>
+
+				<h3 align="left">Mean degree $k_i\simeq \ln (n_i)$</h3><br>
+				<img width="100%" style="border:none; box-shadow:none;" data-src="images/journal.pone2b.png" ></img>
+			</section>
+
+		</section>
+
+	<section>
+		<section>
+			<h3 align="left">Phenotype Landscape:</h3>
+			<img width="65%" style="border:none; box-shadow:none;" data-src="images/compstest.png" ></img>
+		</section>
+
+		<section>
+			<style>
+			.newspaper {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+			-moz-column-count: 2; /* Firefox */
+			column-count: 2;
+			}
+			</style>
+			<div class="newspaper">
+			<p align="left"><small>L=12 RNA Phenotype Landscape</small></p>
+			<!-- img align="left"  width="80%" style="border:none; box-shadow:none;" data-src="images/ADJCYT.svg" ></img -->
+				<img width="95%" style="border:none; box-shadow:none;" data-src="images/ADJCYT.svg" ></img>
+			<br>
+      <p align="left"><small>Phenotypes: p27: ((.(....).))  and p34: ((....)).... connections</small></p>
+			<img width="100%" style="border:none; box-shadow:none;" data-src="images/Union2734.png" ></img>
+
+		</div>
+		</section>
+
+		<section>
+			<h3 align="left">Adjacency Relationships.</h3>
+			<style>
+			.newspaper {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+			-moz-column-count: 2; /* Firefox */
+			column-count: 2;
+			}
+			</style>
+			<div class="newspaper">
+			<img align="left" width="90%"  style="border:none; box-shadow:none;" data-src="images/pk-nhhk.png" ></img>
+			<br><br><br><br><br>
+			<img align="left" height="500" style="border:none; box-shadow:none;" data-src="images/pkall.png" ></img></div>
+	  </section>
+
+		<section>
+			<h3 align="left">Evolutionary Walks.</h3><br>
+			<p align="left">Low lengths have diluted and fragmented phenotype spaces (For L=12 only 12% of the sequences fold).</p>
+		  <p align="left">Random walks, context free grammars and sampling allow us to:</p>
+			<p align="left">
+				• Quantify the long term features of random walks in the phenotype landscape.<br>
+ 				•Total number of non-empty phenotypes.<br>
+ 			  •Phenotype size distributions.<br>
+ 		    •Dwelling time distributions.
+			<p align="left" class="fragment highlight-red">EFFECTIVE THEORY OF MOLECULAR EVOLUTION!</p>
+			<br>
+			<p align="right"><i>S. Manrubia and J. Cuesta, Interface (2014)</i></p>
+
+		</section>
+
+  	<section>
+
+			<style>
+			.newspaper {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+			-moz-column-count: 2; /* Firefox */
+			column-count: 2;
+			}
+			</style>
+			<div class="newspaper">
+			<img  align="left" width="100%"  style="border:none; box-shadow:none;" data-src="images/ScalingAlldata.png" ></img>
+			<p>
+
+			<img  align="left"  width="80%" style="border:none; box-shadow:none;" data-src="images/wlk500.png" ></img>
+			<img  align="left" width="80%" style="border:none; box-shadow:none;" data-src="images/wlk1000.png" ></img>
+		</p>
+		</div>
+		</section>
+
+	<section>
+		<h3 align="left">Cumulative jump distributions</h3>
+		<br>
+		<style>
+		.newspaper {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+			-moz-column-count: 2; /* Firefox */
+			column-count: 2;
+		}
+		</style>
+		<div class="newspaper">
+			<img  align="left" width="100%"  style="border:none; box-shadow:none;" data-src="images/CUMDISTS.png" ></img>
+			<p>
+				<img  align="left" width="100%" style="border:none; box-shadow:none;" data-src="images/CMdistprt.png" ></img>
+			</p>
+		</div>
+	</section>
+
+
+		<section>
+			<h3 align="left">Phenotype generation: Context free grammars.</h3>
+			<br>
+			<p align="left">Generate all the possible words of length $L$ using the alphabet $\{(,•,)\}$ and the constraints:</p>
+
+			<p align="left">- The secondary structure does not have pseudo-knots.</p>
+			<p align="left">- Base triplets are not allowed</p>
+			<p align="left">- Minimal number of upaired nucleotides is 3</p>
+			<br>
+			<p align="right"><i>W. A. Lorenz et al, Asymptotics of RNA Shapes (2007)</i></p>
+			<p align="right"><i>P Clote et al, J of Bioinformatics and Comp Biol (2009)</i></p>
+		</section>
+
+
+		<section>
+			<h3 align="left">Statistical estimates of phenotype sizes:</h3>
+			<br>
+			<p align="left">$d_{ph}(a,b)$ distance between phenotypes a and b.</p>
+			<p align="left">Let  $j_{t}$: target phenotype of size $\left|\omega_{j_{t}}\right|$ and $\lambda_{d}=\{j | d_{ph}(j,j_{t})\leq d\}$</p>
+ 			<p align="left"> Then:
+$\left| \omega_{j_{t}}\right|=\left|\lambda_{0}\right|=\Pi_{k=0}^{d_{max-1}}\frac{\left|\lambda_{k}\right|}{\left|\lambda_{k+1}\right|}\left|\lambda_{d_{max}}\right|$
+</p>
+		<p align="left">Allow us to know $\left|\lambda_{0}\right|$ by sampling the fractions $\frac{\left|\lambda_{k}\right|}{\left|\lambda_{k+1}\right|}$ ($\left| \lambda_{d_{max}} \right| =4^{L}$) </p>
+
+      <br>
+			<p align="right"><i>T. Jorg et al, BMC Bioinformatics (2008)</i></p>
+		</section>
+
+
+		<section>
+				<img  align="left" width="100%" style="border:none; box-shadow:none;" data-src="images/SamplesL12.png" ></img>
+		</section>
+
+
+		<section>
+				<img   width="70%" style="border:none; box-shadow:none;" data-src="images/SNreal.png" ></img>
+		</section>
+
+
+	<section>
+		<img   width="70%" style="border:none; box-shadow:none;" data-src="images/SamplesizesL.png" ></img>
+	</section>
+
+	<section>
+		<h3>Final Comments</h3>
+
+		<p align="left">Combinatorics, inverse folding and sampling allow us:</p>
+		<p align="left"> - To characterise jumps between phenotypes.</p>
+		<p align="left"> - Determine the phenotype sizes and size distribution.</p>
+		<p align="left"> Broad jump-sizes and dwelling time distributions lead to Non-Markovian dynamics.</p>
+		<p align="left"> Transitions between phenotypes depend on the neutral network size.</p>
+		<p align="left"> An effective dynamical theory of evolution seems achievable if we have a good idea of the topological details induced by the genotype-phenotype mapping.</p>
+		<p align="left"> Analytical and numerical evidence suggest that these “evolutionary searches” can be described by “Levy-like" processes.</p>
+		<!-- p align="left"> 	- Redes con d=1 tienen propiedades raras.</p-->
+	</section>
+
+	<section>
+		<h3 align="left">More on this subject:</h3>
+		<p align="left">M. C. Cowperthwaite et al, PLOS Comp. Biol. (2008)</p>
+		<p align="left">B. S. Khatri et. al, PNAS (2009)</p>
+		<p align="left">J. Aguirre et al PRE (2009)</p>
+		<p align="left">E. Ibañez-Marcelo and T. Alarcón, J. Theor. Biol. (2014)</p>
+		<p align="left">S. F. Greebury et. al J. R. Soc. Interface (2014)</p>
+		<p align="left">C. F. Arias et al, Scientific Reports (2014)</p>
+		<p align="left">C. A. Lugo et al (in preparation)</p>
+	</section>
+	</section>
+
+	<section>
+				<section>
+				<h3 align="left">Acknowledgments</h3>
+				<br>
+					<p align="left">Susanna Manrubia (CNB-CSIC, Madrid, Spain)</p>
+					<p align="left">Jacobo Aguirre (CNB-CSIC, Madrid, Spain)</p>
+					<p align="left">Jose Cuesta (Universidad CIII, Madrid, Spain)</p>
+					<p align="left">Iván Dotu (Boston College, Boston USA)</p>
+					<p align="left">Martin Page (TSL, Norwich U.K.)</p>
+				</section>
+				<section>
+					<h1>FIN</h1>
+					<h2>THANKS!<h2>
+				</section>
+</section>
+</div>
+</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+
+				////
+				// The "normal" size of the presentation, aspect ratio will be preserved
+    		// when the presentation is scaled to fit different resolutions. Can be
+    		// specified using percentage units.
+    		width: 1366,
+    		height: 768,
+    		// Factor of the display size that should remain empty around the content
+    		margin: 0.01,
+    		//Bounds for smallest/largest possible scale to apply to content
+    	 //	minScale: 0.9,
+    		//  maxScale: 0.0
+				////
+
+		//		  math: {
+        	//mathjax: 'mathjax/MathJax.js',
+        	//config: 'TeX-AMS_HTML-full'
+    		//	},
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+        	// MathJax
+        	{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
